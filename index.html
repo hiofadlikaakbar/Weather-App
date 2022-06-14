@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather app</title>
+  </head>
+  <body
+    class="bg-no-repeat bg-cover h-screen font-merriWeather"
+    style="
+      background-image: url(https://source.unsplash.com/1600x900/?landscape);
+    "
+  >
+  <div class="container flex justify-center mx-auto h-screen items-center">
+    <div
+      class="w-full px-2 pb-2 max-w-lg bg-slate-900/60 m-0 rounded-xl"
+    >
+      <div class="search py-3 pb-4">
+        <div class="flex justify-center mt-3 items-center mb-5">
+          <input
+            type="text"
+            placeholder="search..."
+            class="search-bar border-none outline-none px-4 py-3 rounded-full bg-dark text-md text-white"
+          />
+
+          <button
+            class="w-10 h-10 p-1 mr-2 order-first bg-dark outline-none rounded-full cursor-pointer transition duration-150 ease-in-out"
+          >
+            <img src="./img/white.ico" alt="" class="mx-auto" />
+          </button>
+        </div>
+        <h2
+          class="city text-3xl font-semibold text-center text-ghost px-3 mb-5"
+        >
+          Weather in ..
+        </h2>
+        <h1
+          class="temp text-5xl font-bold text-center text-ghost px-3 mb-5"
+        >
+          ..°C
+        </h1>
+        <div class="flex justify-center items-center mb-2">
+          <img src="" alt="" class="icon" />
+          <div class="description text-ghost text-xl">Description</div>
+        </div>
+        <div class="humidity text-center text-ghost text-lg">Humidity</div>
+        <div class="wind text-center text-ghost text-lg">Wind Speed</div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
